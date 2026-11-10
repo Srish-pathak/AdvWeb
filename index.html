@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Santosh Pathak | Legal Counsel & Advocate</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0F1E36',
+                            900: '#0A1424',
+                            950: '#060C17',
+                        },
+                        gold: {
+                            400: '#E5C07B',
+                            500: '#D4AF37',
+                            600: '#B8860B',
+                            700: '#996F08',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3E7C4 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #D4AF37, #F3E7C4, #D4AF37) 1;
+        }
+        .legal-texture {
+            background-color: #0A1424;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.04) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Top Notification / Emergency Helpline Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-navy-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-gold-400">
+                    <i class="fa-solid fa-scale-balanced text-xs"></i> Bar Council Registered Advocate
+                </span>
+                <span class="hidden md:inline text-slate-500">|</span>
+                <span class="hidden md:inline"><i class="fa-regular fa-clock text-gold-400 mr-1"></i> Chamber Hours: Mon - Sat 10:00 AM - 7:30 PM</span>
+            </div>
+            <div class="flex items-center gap-4 font-medium">
+                <a href="tel:+919876543210" class="hover:text-gold-400 transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-gold-400"></i> +91 98765 43210
+                </a>
+                <span class="text-slate-600">|</span>
+                <a href="#contact" class="hover:text-gold-400 transition flex items-center gap-1 text-gold-400 font-semibold">
+                    <i class="fa-regular fa-calendar-check"></i> Book Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Main Navigation -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-navy-800/80 shadow-lg transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-navy-950 font-serif font-bold text-xl shadow-md group-hover:scale-105 transition-transform duration-200">
+                    SP
+                </div>
+                <div>
+                    <h1 class="font-serif font-bold text-lg sm:text-xl text-white tracking-wide leading-tight">
+                        Santosh Pathak
+                    </h1>
+                    <p class="text-xs font-medium text-gold-400 tracking-widest uppercase">Advocate & Legal Counsel</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+                <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
+                <a href="#practice" class="hover:text-gold-400 transition-colors">Practice Areas</a>
+                <a href="#experience" class="hover:text-gold-400 transition-colors">Milestones</a>
+                <a href="#cases" class="hover:text-gold-400 transition-colors">Case Highlights</a>
+                <a href="#faq" class="hover:text-gold-400 transition-colors">FAQs</a>
+                <a href="#chambers" class="hover:text-gold-400 transition-colors">Chambers</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#contact" class="px-5 py-2.5 rounded-md bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-semibold text-sm shadow-md hover:shadow-gold-500/20 transition-all duration-200 flex items-center gap-2">
+                    <i class="fa-solid fa-gavel text-xs"></i>
+                    Schedule Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-md text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-navy-950 border-b border-navy-800 px-4 pt-3 pb-6 space-y-3 transition-all duration-300">
+            <a href="#about" class="block px-3 py-2 rounded-md text-slate-200 hover:text-gold-400 hover:bg-navy-900 font-medium mobile-link">About</a>
+            <a href="#practice" class="block px-3 py-2 rounded-md text-slate-200 hover:text-gold-400 hover:bg-navy-900 font-medium mobile-link">Practice Areas</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md text-slate-200 hover:text-gold-400 hover:bg-navy-900 font-medium mobile-link">Milestones</a>
+            <a href="#cases" class="block px-3 py-2 rounded-md text-slate-200 hover:text-gold-400 hover:bg-navy-900 font-medium mobile-link">Case Highlights</a>
+            <a href="#faq" class="block px-3 py-2 rounded-md text-slate-200 hover:text-gold-400 hover:bg-navy-900 font-medium mobile-link">FAQs</a>
+            <a href="#chambers" class="block px-3 py-2 rounded-md text-slate-200 hover:text-gold-400 hover:bg-navy-900 font-medium mobile-link">Chambers</a>
+            <div class="pt-2">
+                <a href="#contact" class="block text-center w-full py-2.5 rounded-md bg-gold-500 text-navy-950 font-semibold mobile-link">
+                    Book Legal Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative legal-texture text-white overflow-hidden py-16 md:py-24 border-b border-navy-800">
+        <!-- Ambient Glow Circles -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/80 border border-gold-500/30 text-gold-400 text-xs font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-building-columns"></i>
+                        High Court & District Judiciary Counsel
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-tight">
+                        Advocate <span class="gold-gradient-text">Santosh Pathak</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 font-serif italic border-l-2 border-gold-500 pl-4">
+                        "Unwavering dedication to justice, rigorous legal analysis, and strategic courtroom advocacy."
+                    </p>
+
+                    <p class="text-slate-400 text-base leading-relaxed max-w-2xl">
+                        Providing assertive representation and strategic dispute resolution across Civil Injunctions, Criminal Defense, Property Litigation, Writ Petitions, and Commercial Arbitration before Higher and Subordinate Courts.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#contact" class="px-6 py-3.5 rounded-lg bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold shadow-lg shadow-gold-500/20 transition-all duration-200 flex items-center gap-2">
+                            <span>Request Urgent Consultation</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#practice" class="px-6 py-3.5 rounded-lg bg-navy-800/80 hover:bg-navy-800 text-white font-medium border border-slate-700 hover:border-gold-500/50 transition-all duration-200 flex items-center gap-2">
+                            <span>Explore Practice Areas</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-navy-800 max-w-lg">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-serif font-bold text-gold-400">15+</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Years Practice</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-serif font-bold text-gold-400">1,200+</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Matters Briefed</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-serif font-bold text-gold-400">98%</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Client Trust</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual / Counsel Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Decorative Frame -->
+                        <div class="absolute -inset-1.5 rounded-2xl bg-gradient-to-tr from-gold-600 via-amber-300 to-gold-700 opacity-30 blur-sm"></div>
+                        <div class="relative bg-navy-900 rounded-2xl p-6 sm:p-8 border border-navy-800 shadow-2xl">
+                            <div class="flex items-center gap-4 pb-6 border-b border-navy-800">
+                                <div class="w-16 h-16 rounded-full bg-navy-800 border-2 border-gold-400 flex items-center justify-center text-gold-400 text-2xl shadow-inner">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-serif font-bold text-white">Santosh Pathak</h3>
+                                    <p class="text-xs text-gold-400 uppercase tracking-wider">Advocate-on-Record / Litigation Specialist</p>
+                                    <span class="inline-block mt-1 text-[11px] bg-navy-800 text-emerald-400 font-medium px-2 py-0.5 rounded border border-emerald-500/20">
+                                        <i class="fa-solid fa-circle text-[8px] mr-1"></i> Active Practice
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="py-5 space-y-3.5 text-sm text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-landmark text-gold-400 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium text-white">Jurisdictional Footprint</p>
+                                        <p class="text-xs text-slate-400">High Courts, District & Sessions Courts, Consumer Commissions & Arbitral Tribunals</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-book-bookmark text-gold-400 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium text-white">Ethical Advocacy</p>
+                                        <p class="text-xs text-slate-400">Strict fidelity to client privilege and Bar Council code of professional conduct</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-shield-halved text-gold-400 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium text-white">Advisory & Drafting</p>
+                                        <p class="text-xs text-slate-400">Pleadings, Special Leave Petitions, Title Due Diligence & Commercial Contracts</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-navy-800 flex items-center justify-between">
+                                <span class="text-xs text-slate-400">Need immediate counsel?</span>
+                                <a href="#contact" class="text-xs font-semibold text-gold-400 hover:text-gold-300 flex items-center gap-1">
+                                    Direct Message <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Profile & Philosophy -->
+    <section id="about" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="relative">
+                        <div class="w-full h-96 rounded-2xl bg-gradient-to-br from-navy-900 to-navy-800 p-8 flex flex-col justify-between text-white shadow-xl relative overflow-hidden">
+                            <i class="fa-solid fa-quote-left text-6xl text-gold-500/20 absolute -top-2 left-4"></i>
+                            
+                            <div class="relative z-10 pt-4">
+                                <span class="text-xs font-bold text-gold-400 tracking-widest uppercase">The Litigator's Creed</span>
+                                <h4 class="font-serif text-2xl font-bold mt-2 text-white">"Justice is not accidental; it is built on meticulous research, razor-sharp facts, and unyielding resolve."</h4>
+                            </div>
+
+                            <div class="relative z-10 border-t border-navy-700 pt-4">
+                                <p class="font-semibold text-sm text-gold-400">Santosh Pathak</p>
+                                <p class="text-xs text-slate-400">Advocate</p>
+                            </div>
+                        </div>
+
+                        <!-- Pill highlight badge -->
+                        <div class="absolute -bottom-5 -right-3 sm:right-6 bg-white p-4 rounded-xl shadow-lg border border-slate-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 text-gold-600 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-navy-900">Recognized Counsel</p>
+                                <p class="text-[11px] text-slate-500">Trusted by hundreds of families & enterprises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-xs font-bold text-gold-600 tracking-widest uppercase inline-block">Profile & Legal Philosophy</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-900 leading-tight">
+                        Advancing Client Rights Through Strategic Preparedness & Rigorous Legal Doctrine
+                    </h2>
+                    
+                    <p class="text-slate-600 leading-relaxed">
+                        With extensive experience across diverse judicial forums, Advocate Santosh Pathak delivers comprehensive litigation and transactional advisory services. His practice is grounded in proactive conflict prevention, transparent client communication, and tenacious courtroom defense.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        From navigating multifaceted ancestral property partition suits and commercial contract breaches to securing urgent bails and arguing writ petitions under constitutional provisions, his chamber prioritizes tailor-made legal strategies aligned with contemporary jurisprudence.
+                    </p>
+
+                    <!-- Core Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center gap-2.5 text-navy-900 font-semibold mb-1">
+                                <i class="fa-solid fa-magnifying-glass-chart text-gold-600"></i>
+                                <span>In-Depth Evidentiary Scrutiny</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Thorough forensic document examination and precedent research before framing pleadings.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center gap-2.5 text-navy-900 font-semibold mb-1">
+                                <i class="fa-solid fa-handshake-simple text-gold-600"></i>
+                                <span>Absolute Confidentiality</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Privileged attorney-client communication guarded with rigorous ethical standards.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center gap-2.5 text-navy-900 font-semibold mb-1">
+                                <i class="fa-solid fa-bullseye text-gold-600"></i>
+                                <span>Practical Commercial Realism</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Balancing litigation vigor with Alternative Dispute Resolution (ADR) to save clients time & cost.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center gap-2.5 text-navy-900 font-semibold mb-1">
+                                <i class="fa-solid fa-file-signature text-gold-600"></i>
+                                <span>Transparent Case Tracking</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Consistent updates on hearing dates, order sheets, and next procedural phases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Grid -->
+    <section id="practice" class="py-20 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-gold-600 tracking-widest uppercase">Specializations</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-900 mt-2">
+                    Core Practice Areas & Legal Expertise
+                </h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-sm sm:text-base">
+                    Comprehensive legal remedies structured to safeguard civil rights, corporate assets, personal liberty, and family interests.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Practice 1 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/80 hover:border-gold-500/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-house-chimney-crack"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-navy-900 mb-2">Civil Litigation & Property Disputes</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Title declarations, partition suits, boundary & easement rights, injunctions, revenue records correction, and tenancy disputes.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Interim Stay & Injunctions</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Title Verification & Conveyancing</li>
+                    </ul>
+                </div>
+
+                <!-- Practice 2 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/80 hover:border-gold-500/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-handcuffs"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-navy-900 mb-2">Criminal Defense & Bail Matters</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Vigorous defense in criminal proceedings, Anticipatory Bail, Regular Bail under CrPC/BNSS, quashing of FIRs, and trial representation.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Urgent Anticipatory Bail Petitions</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Defense in White-Collar Offences</li>
+                    </ul>
+                </div>
+
+                <!-- Practice 3 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/80 hover:border-gold-500/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-navy-900 mb-2">Constitutional & Writ Jurisdiction</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Writ petitions (Mandamus, Certiorari, Habeas Corpus) invoking Articles 226 & 227 before the High Court against arbitrary state actions.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Service & Administrative Writs</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Quashing Arbitrary Govt. Orders</li>
+                    </ul>
+                </div>
+
+                <!-- Practice 4 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/80 hover:border-gold-500/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-navy-900 mb-2">Family & Matrimonial Law</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Divorce by mutual consent or contested, maintenance & alimony under CrPC/HMA, child custody, guardianship, and domestic disputes.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Compassionate & Confidential Handling</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Mediation & Settlement Protocols</li>
+                    </ul>
+                </div>
+
+                <!-- Practice 5 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/80 hover:border-gold-500/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-navy-900 mb-2">Commercial & Contract Law</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Drafting and vetting of commercial agreements, recovery suits, summary suits under Order 37, Section 138 NI Act (cheque bounce), and vendor conflicts.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Cheque Bounce Prosecutions</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Business Contract Enforcements</li>
+                    </ul>
+                </div>
+
+                <!-- Practice 6 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/80 hover:border-gold-500/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-navy-900 mb-2">Arbitration & Alternative Dispute Resolution</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Adjudication and representation under the Arbitration and Conciliation Act, appointment of Arbitrators under Sec 11, and enforcement/challenge of awards.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Section 9 Interim Relief Applications</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-600 text-[10px]"></i> Section 34 Award Challenges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Timeline & Milestones -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-gold-600 tracking-widest uppercase">Career Journey</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-900 mt-2">
+                    Milestones of Professional Excellence
+                </h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l-2 border-slate-200 ml-4 md:ml-32 space-y-12">
+                <!-- Timeline item 1 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1 w-6 h-6 rounded-full bg-gold-500 border-4 border-white shadow"></div>
+                    <span class="md:absolute md:-left-32 top-1 text-xs font-bold text-gold-600 uppercase tracking-wider block mb-1 md:mb-0">2020 – Present</span>
+                    <h3 class="text-lg font-serif font-bold text-navy-900">Senior Independent Counsel & Appellate Advocate</h3>
+                    <p class="text-slate-600 text-sm mt-1.5 leading-relaxed">
+                        Leading independent practice before the High Court and appellate tribunals in substantial civil disputes, constitutional writs, and complex criminal appeals.
+                    </p>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1 w-6 h-6 rounded-full bg-navy-900 border-4 border-white shadow"></div>
+                    <span class="md:absolute md:-left-32 top-1 text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1 md:mb-0">2015 – 2020</span>
+                    <h3 class="text-lg font-serif font-bold text-navy-900">Chamber Practice Expansion & Corporate Legal Retainers</h3>
+                    <p class="text-slate-600 text-sm mt-1.5 leading-relaxed">
+                        Retained by regional corporate bodies, builders, and educational institutions for regulatory compliance, real estate due diligence, and recovery litigation.
+                    </p>
+                </div>
+
+                <!-- Timeline item 3 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1 w-6 h-6 rounded-full bg-navy-800 border-4 border-white shadow"></div>
+                    <span class="md:absolute md:-left-32 top-1 text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1 md:mb-0">2010 – 2015</span>
+                    <h3 class="text-lg font-serif font-bold text-navy-900">District & Sessions Court Trial Advocacy</h3>
+                    <p class="text-slate-600 text-sm mt-1.5 leading-relaxed">
+                        Extensive ground-level cross-examinations, witness examination, arguments in civil suits, and successful defense representation in contentious trial hearings.
+                    </p>
+                </div>
+
+                <!-- Timeline item 4 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1 w-6 h-6 rounded-full bg-slate-400 border-4 border-white shadow"></div>
+                    <span class="md:absolute md:-left-32 top-1 text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1 md:mb-0">Early Career</span>
+                    <h3 class="text-lg font-serif font-bold text-navy-900">Bar Enrollment & Pupillage under Veteran Litigators</h3>
+                    <p class="text-slate-600 text-sm mt-1.5 leading-relaxed">
+                        Enrolled with the State Bar Council and trained under senior designated advocates, mastering the craft of legal draftsmanship, procedural jurisprudence, and courtroom composure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Highlights / Representative Successes -->
+    <section id="cases" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold text-gold-400 tracking-widest uppercase">Representative Matters</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">
+                        Case Studies & Landmark Resolutions
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-2 max-w-xl">
+                        *Anonymized in compliance with Bar Council of India standards of confidentiality and client privacy.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-xs text-gold-400/80 font-mono"><i class="fa-solid fa-lock mr-1.5"></i>Strictly Confidential Records</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Case 1 -->
+                <div class="bg-navy-950 p-6 rounded-xl border border-navy-800 hover:border-gold-500/50 transition-colors">
+                    <div class="flex items-center justify-between text-xs text-gold-400 font-semibold mb-3">
+                        <span>Property & Injunction</span>
+                        <span class="bg-navy-800 text-gold-400 px-2 py-0.5 rounded text-[10px]">High Court</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-white mb-2">Restraining Illegal Dispossession of Ancestral Land</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Secured an immediate ad-interim ex-parte injunction against an unauthorized municipal takeover, establishing unbroken 60-year documented title and protecting multi-crore land parcel.
+                    </p>
+                    <div class="text-[11px] text-slate-500 border-t border-navy-800/80 pt-3 flex items-center justify-between">
+                        <span>Outcome: Status Quo Maintained</span>
+                        <i class="fa-solid fa-shield-check text-emerald-400"></i>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-navy-950 p-6 rounded-xl border border-navy-800 hover:border-gold-500/50 transition-colors">
+                    <div class="flex items-center justify-between text-xs text-gold-400 font-semibold mb-3">
+                        <span>Criminal Jurisprudence</span>
+                        <span class="bg-navy-800 text-gold-400 px-2 py-0.5 rounded text-[10px]">Sessions Court</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-white mb-2">Anticipatory Bail in Complicated Corporate Fraud Allegation</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Demonstrated absence of mens rea and documentary non-involvement of director client in a criminal breach of trust case, securing pre-arrest bail protection.
+                    </p>
+                    <div class="text-[11px] text-slate-500 border-t border-navy-800/80 pt-3 flex items-center justify-between">
+                        <span>Outcome: Anticipatory Bail Granted</span>
+                        <i class="fa-solid fa-shield-check text-emerald-400"></i>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-navy-950 p-6 rounded-xl border border-navy-800 hover:border-gold-500/50 transition-colors">
+                    <div class="flex items-center justify-between text-xs text-gold-400 font-semibold mb-3">
+                        <span>Commercial Recovery</span>
+                        <span class="bg-navy-800 text-gold-400 px-2 py-0.5 rounded text-[10px]">Civil Judge Sr. Div.</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-white mb-2">Recovery of Dues under Negotiable Instruments Act</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Structured an expedited trial leading to full recovery of dishonored funds plus interest along with pre-trial attachment of debtor's unencumbered bank assets.
+                    </p>
+                    <div class="text-[11px] text-slate-500 border-t border-navy-800/80 pt-3 flex items-center justify-between">
+                        <span>Outcome: 100% Capital Recovery</span>
+                        <i class="fa-solid fa-shield-check text-emerald-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Fee & Eligibility Guide / Interactive FAQ -->
+    <section id="faq" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-gold-600 tracking-widest uppercase">Client Clarifications</span>
+                <h2 class="text-3xl font-serif font-bold text-navy-900 mt-2">Frequently Asked Questions</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 text-sm mt-3">What to expect when scheduling an in-chamber or virtual conference.</p>
+            </div>
+
+            <!-- Accordion items -->
+            <div class="space-y-4" id="faqAccordion">
+                <!-- Q1 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden transition-all duration-200">
+                    <button class="w-full text-left p-5 bg-slate-50 hover:bg-slate-100 flex items-center justify-between font-serif font-semibold text-navy-900 text-base focus:outline-none faq-btn" data-target="faq1">
+                        <span>What documents should I prepare before our initial legal consultation?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="icon-faq1"></i>
+                    </button>
+                    <div id="faq1" class="hidden p-5 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                        Please assemble a chronological timeline of events along with all primary documents: certified copies of title deeds, notices received or sent, police complaints/FIRs, contract agreements, correspondence (emails/WhatsApp messages), and earlier court orders (if already pending). Having these organized expedites the preliminary legal appraisal.
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden transition-all duration-200">
+                    <button class="w-full text-left p-5 bg-slate-50 hover:bg-slate-100 flex items-center justify-between font-serif font-semibold text-navy-900 text-base focus:outline-none faq-btn" data-target="faq2">
+                        <span>Can consultations be conducted virtually for non-resident clients or outstation parties?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="icon-faq2"></i>
+                    </button>
+                    <div id="faq2" class="hidden p-5 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                        Yes. Virtual video conferences (Google Meet / Zoom / Phone) are regularly arranged for NRI clients, outstation litigants, or busy corporate representatives. Digital copies of documents can be transmitted securely prior to the call.
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden transition-all duration-200">
+                    <button class="w-full text-left p-5 bg-slate-50 hover:bg-slate-100 flex items-center justify-between font-serif font-semibold text-navy-900 text-base focus:outline-none faq-btn" data-target="faq3">
+                        <span>How are legal fees, retainers, and filing expenses determined?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="icon-faq3"></i>
+                    </button>
+                    <div id="faq3" class="hidden p-5 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                        In strict adherence to Bar Council ethics, legal fees depend entirely on the complexity of the matter, forum of litigation (District Court, High Court, Tribunals), anticipated hearings, research requirements, and urgent relief needs. All fee structures and clerkage/court fees are clearly discussed with utmost transparency before brief acceptance.
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden transition-all duration-200">
+                    <button class="w-full text-left p-5 bg-slate-50 hover:bg-slate-100 flex items-center justify-between font-serif font-semibold text-navy-900 text-base focus:outline-none faq-btn" data-target="faq4">
+                        <span>What is the chamber's approach toward out-of-court settlements and mediation?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="icon-faq4"></i>
+                    </button>
+                    <div id="faq4" class="hidden p-5 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                        Litigation in courts can often be arduous and prolonged. Where beneficial to the client’s legal and financial interests, we actively advise and facilitate mediation, conciliation, and negotiated compromise deeds before escalating matters to trial.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Booking & Contact Section -->
+    <section id="contact" class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left: Contact Details & Chamber Hours -->
+                <div class="lg:col-span-5 space-y-8" id="chambers">
+                    <div>
+                        <span class="text-xs font-bold text-gold-600 tracking-widest uppercase">Office of the Advocate</span>
+                        <h2 class="text-3xl font-serif font-bold text-navy-900 mt-2">Chamber & Direct Contacts</h2>
+                        <p class="text-slate-600 text-sm mt-3">
+                            Prior appointment is encouraged to ensure undivided attention and review of relevant paperwork.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Chamber Card -->
+                        <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-navy-900 text-gold-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-navy-900">Main Chambers</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">Chamber No. 42, Lawyers' Chambers Complex, Near High Court / District Court Enclave</p>
+                                <p class="text-xs text-slate-400 mt-1">Convenient parking & client waiting lounge available</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-navy-900 text-gold-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-navy-900">Direct Telephone & WhatsApp</h4>
+                                <p class="text-slate-700 text-sm mt-0.5 font-medium">+91 98765 43210 / +91 91234 56789</p>
+                                <p class="text-xs text-slate-400 mt-1">For urgent bail or stay orders: Available 24/7 on call</p>
+                            </div>
+                        </div>
+
+                        <!-- Email Card -->
+                        <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-navy-900 text-gold-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-navy-900">Official Brief Delivery</h4>
+                                <p class="text-slate-700 text-sm mt-0.5 font-medium">advocate.santoshpathak@lawchamber.in</p>
+                                <p class="text-xs text-slate-400 mt-1">Encrypted and confidential digital filings</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours Card -->
+                        <div class="p-5 rounded-xl bg-navy-900 text-white shadow-sm flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500 text-navy-950 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-white">Chamber Timings</h4>
+                                <p class="text-slate-300 text-xs mt-1">Monday – Saturday: 10:00 AM to 7:30 PM</p>
+                                <p class="text-slate-300 text-xs">Sunday: Prior Appointment Only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Consultation Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-lg">
+                        <div class="border-b border-slate-200 pb-5 mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-navy-900">Schedule a Case Consultation</h3>
+                            <p class="text-xs sm:text-sm text-slate-500 mt-1">
+                                Complete this form with preliminary facts. We respond within 3–4 business hours.
+                            </p>
+                        </div>
+
+                        <form id="consultationForm" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Full Name *</label>
+                                    <input type="text" id="clientName" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="e.g. Rajesh Kumar">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Phone / WhatsApp *</label>
+                                    <input type="tel" id="clientPhone" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="+91 98765 00000">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Email Address</label>
+                                    <input type="email" id="clientEmail" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="name@domain.com">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Legal Category *</label>
+                                    <select id="caseCategory" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                        <option value="">Select Category</option>
+                                        <option value="Civil & Property Dispute">Civil & Property Dispute</option>
+                                        <option value="Criminal Defense / Bail">Criminal Defense / Bail</option>
+                                        <option value="High Court Writ Petition">High Court Writ Petition</option>
+                                        <option value="Matrimonial / Family Dispute">Matrimonial / Family Dispute</option>
+                                        <option value="Commercial & Cheque Bounce">Commercial & Cheque Bounce</option>
+                                        <option value="Arbitration & ADR">Arbitration & ADR</option>
+                                        <option value="General Legal Opinion">General Legal Advisory</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Preferred Consultation Mode</label>
+                                    <select id="consultMode" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                        <option value="In-Person at Chamber">In-Person Chamber Conference</option>
+                                        <option value="Virtual Video Consultation">Virtual Video Consultation (Google Meet)</option>
+                                        <option value="Telephonic Discussion">Telephonic Discussion</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Urgency Level</label>
+                                    <select id="urgencyLevel" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                        <option value="Standard (Within 2-3 Days)">Standard (Within 2-3 Days)</option>
+                                        <option value="Urgent (Today / Tomorrow)">Urgent (Today / Tomorrow)</option>
+                                        <option value="Emergency (Same Day Arrest/Stay Risk)">Emergency (Arrest/Stay Risk)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider">Brief Summary of the Dispute / Legal Issue *</label>
+                                <textarea id="caseDetails" rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="Please provide background facts, current stage (notice received, FIR filed, suit instituted), and specific relief sought..."></textarea>
+                            </div>
+
+                            <div class="flex items-start gap-2 pt-1">
+                                <input type="checkbox" id="consentCheck" required class="mt-1 rounded text-gold-600 focus:ring-gold-500 h-4 w-4 border-slate-300">
+                                <label for="consentCheck" class="text-xs text-slate-500 leading-normal">
+                                    I understand that submitting this inquiry does not automatically establish an advocate-client relationship. All disclosed data remains strictly confidential.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 px-6 rounded-lg bg-navy-900 hover:bg-navy-800 text-gold-400 font-bold text-sm tracking-wide shadow-md transition-all duration-200 flex items-center justify-center gap-2 group">
+                                <span>Submit Consultation Request</span>
+                                <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bar Council Compliance Banner & Footer -->
+    <footer class="bg-navy-950 text-slate-400 border-t border-navy-800 text-xs">
+        <!-- BCI Disclaimer Box -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-b border-navy-800/80">
+            <div class="bg-navy-900/90 border border-gold-500/20 rounded-xl p-6 text-slate-300 space-y-2">
+                <div class="flex items-center gap-2 text-gold-400 font-semibold text-sm">
+                    <i class="fa-solid fa-scale-unbalanced text-base"></i>
+                    <span>Bar Council of India Regulatory Disclaimer</span>
+                </div>
+                <p class="text-[12px] leading-relaxed text-slate-400">
+                    As per the rules of the Bar Council of India, advocates are prohibited from soliciting work or advertising in any manner. By accessing this website (the portfolio of Advocate Santosh Pathak), the user acknowledges that they are voluntarily seeking information relating to his legal background and services for their own personal information and that there has been no solicitation, invitation, or inducement of any sort whatsoever by Advocate Santosh Pathak or his associates to solicit legal representation.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded bg-gold-500 text-navy-950 font-serif font-bold text-sm flex items-center justify-center">
+                    SP
+                </div>
+                <div>
+                    <p class="font-serif font-bold text-white text-sm">Chambers of Santosh Pathak</p>
+                    <p class="text-[11px] text-slate-500">Advocate & Legal Counsel</p>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right text-[11px] text-slate-500">
+                <p>© <span id="currentYear"></span> Advocate Santosh Pathak. All Rights Reserved.</p>
+                <p class="mt-0.5">Designed with strict adherence to legal ethics & privilege standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Submission Confirmation Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-50 bg-navy-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 text-center transform transition-all">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl mb-4">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-1">Consultation Request Lodged</h3>
+            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider mb-4">Reference: <span id="modalRefCode">SP-2026-0000</span></p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6" id="modalMessage">
+                Thank you. Advocate Santosh Pathak's chamber has received your matter brief. Our team will verify court commitments and contact you shortly.
+            </p>
+            <button id="closeModalBtn" class="w-full py-2.5 rounded-lg bg-navy-900 text-gold-400 font-semibold text-sm hover:bg-navy-800 transition">
+                Acknowledge & Close
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu upon clicking any link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // FAQ Accordion Interaction
+        const faqButtons = document.querySelectorAll('.faq-btn');
+        faqButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
+                const icon = document.getElementById(`icon-${targetId}`);
+
+                const isExpanded = !targetContent.classList.contains('hidden');
+
+                // Collapse all first
+                faqButtons.forEach(otherBtn => {
+                    const otherId = otherBtn.getAttribute('data-target');
+                    document.getElementById(otherId).classList.add('hidden');
+                    document.getElementById(`icon-${otherId}`).classList.remove('rotate-180');
+                });
+
+                // If it wasn't open, open it
+                if (!isExpanded) {
+                    targetContent.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // Consultation Form Handling & Modal Trigger
+        const consultationForm = document.getElementById('consultationForm');
+        const bookingModal = document.getElementById('bookingModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalRefCode = document.getElementById('modalRefCode');
+        const modalMessage = document.getElementById('modalMessage');
+
+        consultationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const category = document.getElementById('caseCategory').value;
+            const mode = document.getElementById('consultMode').value;
+            const urgency = document.getElementById('urgencyLevel').value;
+
+            // Generate clean reference ID
+            const randomId = Math.floor(1000 + Math.random() * 9000);
+            const refCode = `SP-MATTER-${randomId}`;
+
+            modalRefCode.textContent = refCode;
+            modalMessage.innerHTML = `Thank you, <strong>${name}</strong>. Your consultation request regarding <strong>${category}</strong> via <strong>${mode}</strong> (Urgency: <strong>${urgency}</strong>) has been queued. Our chamber desk will reach out at <strong>${phone}</strong> shortly.`;
+
+            // Display modal
+            bookingModal.classList.remove('hidden');
+
+            // Reset form
+            consultationForm.reset();
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            bookingModal.classList.add('hidden');
+        });
+
+        // Close modal if user clicks outside of modal container
+        bookingModal.addEventListener('click', (e) => {
+            if (e.target === bookingModal) {
+                bookingModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
